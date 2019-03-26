@@ -95,7 +95,6 @@ def measure_object_approach(image):
     cv.imshow("measure-contours", dst)
 
 
-
 def main():
     # src = cv.imread(int_img_path)
     src = cv.imread(contours_img_path)

@@ -28,6 +28,7 @@ def erode_demo(image):
     gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     ret, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
     cv.imshow("binary", binary)
+    # 腐蚀块的大小(15, 15)
     kernel = cv.getStructuringElement(cv.MORPH_RECT, (15, 15))
     dst = cv.erode(binary, kernel)
     cv.imshow("erode_demo", dst)
@@ -38,9 +39,11 @@ def dilate_demo(image):
     gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     ret, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
     cv.imshow("binary", binary)
+    # 膨胀块的大小(5, 5)
     kernel = cv.getStructuringElement(cv.MORPH_RECT, (5, 5))
     dst = cv.dilate(binary, kernel)
     cv.imshow("dilate_demo", dst)
+
 
 def main():
     src = cv.imread(coins_img_path)
