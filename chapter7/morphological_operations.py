@@ -20,7 +20,7 @@ def hat_gray_demo(image):
     gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     kernel = cv.getStructuringElement(cv.MORPH_RECT, (8, 8))
     # dst = cv.morphologyEx(gray, cv.MORPH_TOPHAT, kernel)    # 顶帽
-    dst = cv.morphologyEx(gray, cv.MORPH_BLACKHAT, kernel)    # 黑帽
+    dst = cv.morphologyEx(gray, cv.MORPH_BLACKHAT, kernel)  # 黑帽
     # 增加亮度
     cimage = 100;
     dst = cv.add(dst, cimage)
@@ -50,8 +50,8 @@ def gradient_demo(image):
     kernel = cv.getStructuringElement(cv.MORPH_RECT, (3, 3))
     dm = cv.dilate(image, kernel)
     em = cv.erode(image, kernel)
-    dst1 = cv.subtract(image, em) # internal gradient
-    dst2 = cv.subtract(dm, image) # external gradient
+    dst1 = cv.subtract(image, em)  # internal gradient
+    dst2 = cv.subtract(dm, image)  # external gradient
     cv.imshow("internal", dst1)
     cv.imshow("external", dst2)
 
@@ -80,4 +80,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
