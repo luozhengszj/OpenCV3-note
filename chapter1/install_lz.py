@@ -7,13 +7,16 @@
 # 测试
 import cv2 as cv
 import numpy as np
+import sys
 
-print(cv.__version__)
-print(np.__version__)
+print('cv:'+cv.__version__)
+print('numpy:'+np.__version__)
+print('python:'+sys.version)
 
 '''
-4.0.0
-1.16.2
+cv:4.0.0
+numpy:1.16.2
+python:3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)]
 '''
 
 '''
