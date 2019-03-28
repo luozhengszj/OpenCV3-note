@@ -1,11 +1,11 @@
 
-##OpenCV
+## OpenCV
 OpenCV的全称是Open Source Computer Vision Library，是一个跨平台的计算机视觉库。
 OpenCV是由英特尔公司发起并参与开发，以BSD许可证授权发行，可以在商业和研究领域中免费使用。
 
 OpenCV可用于开发实时的图像处理、计算机视觉以及模式识别程序。
 
-##Demo环境
+## Demo环境
 
 ```javascript
 cv:4.0.0
@@ -14,7 +14,7 @@ python:3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)]
 ```
 
 
-##代码及笔记结构
+## 代码及笔记结构
 
 * chapter1
     *  Python-OpenCV的虚拟环境安装测试、Github的命令操作等准备工作
@@ -50,7 +50,7 @@ python:3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)]
     * 基于级联检测器的人脸识别（haarcascade_frontalface_alt_tree.xml）：需要光线较强的情况下才能比较准确。
     * 基于OpenCV+Tesserct-OCR的数字验证码识别：OpenCV预处理、Tesserct-OCR验证码识别。
 
-##有问题反馈
+## 有问题反馈
 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
 
 * Email:864987080@qq.com
